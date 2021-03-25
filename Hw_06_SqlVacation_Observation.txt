@@ -1,0 +1,18 @@
+Observation #1:
+
+When generating a city list and using the url and the designated API Key you are given the temperature
+given is automatically taken in units of Kelvin in order to change that I needed to alter the query_url line of code I used
+and add "&units=imperial" but that  must be added before "&q=" otherwise it won't work. From there you should notice the temperature
+will change on the dataframes as well on how it looks in your scatter plot as well
+
+Observation #2:
+
+When creating the Northern and Southern hemisphere plots because you need to filter data rather than try to add adjustments to the plot
+it's much easier to creater filtered dataframes instead and use rather than use the original dataframe you started with into the code and from
+there just use [""] along with the keyword for what you want to take out such as Lat.
+
+Observation #3: 
+
+In case you don't understand why when using the linear regression model and you can't understand why the linear model doesn't appear on the graph
+that's because the x and y values change and because you have to play with the line of code that says plt.annotate and alter the values given in (#,#) for this
+it's suggested to play around with otherwise you may have your numbers appearing over values making it hard to read
